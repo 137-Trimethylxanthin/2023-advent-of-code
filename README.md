@@ -14,9 +14,9 @@ and if i cant do them in rust i will do them in [Go](https://golang.org/).
 
 If you want to do the challenges yourself, don't look at the code.
 
-you can't copy the anwser blow becuase they are indiviually for every person (i think). So you can look at my code mybe it helps you in some way  I will try to keep the code as clean as possible, but i can't promise anything.
+You can't copy the answers because they are individually written for every person (I think). So you can look at my code, maybe it helps you in some way  I will try to keep the code as clean as possible, but I can't promise anything.
 
-but if you really wnt an awnser you can just build my code and replace input with yours, but i would not recomend this because it ruins the fund and porpus behind the game but you do you. :) (i will write a build tutuorial below all of this and maybe a thing so you can just select the things from the start directory or something like that.)
+But if you really want an answer, you can just build my code and replace input with yours, but I would not recommend this because it ruins the fun and purpose behind the game. But you do you. :) (I will write a build tutorial below all of this and maybe a thing so you can just select the things from the start directory or something like that.)
 
 ## few words of encouragement ❤️
 
