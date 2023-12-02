@@ -1,0 +1,495 @@
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1701506636625)
++++ b/.idea/vcs.xml	(date 1701506636625)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/test.rs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test.rs b/src/test.rs
+new file mode 100644
+--- /dev/null	(date 1701510324464)
++++ b/src/test.rs	(date 1701510324464)
+@@ -0,0 +1,12 @@
++#[cfg(test)]
++mod tests {
++    use crate::{ get_sum_of_vec, read_file_to_bags};
++
++    #[test]
++    fn play_game_t1() {
++        let games = read_file_to_bags("src/testGame.txt",12, 13, 14);
++
++        let sum = get_sum_of_vec(games);
++        assert_eq!(sum, 8)
++    }
++}
+\ No newline at end of file
+Index: src/testGame.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/testGame.txt b/src/testGame.txt
+new file mode 100644
+--- /dev/null	(date 1701507534974)
++++ b/src/testGame.txt	(date 1701507534974)
+@@ -0,0 +1,5 @@
++Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
++Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue
++Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red
++Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red
++Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
+\ No newline at end of file
+Index: ../../01/second_half/target/.rustc_info.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\"rustc_fingerprint\":15452331268264180365,\"outputs\":{\"15729799797837862367\":{\"success\":true,\"status\":\"\",\"code\":0,\"stdout\":\"___\\nlib___.rlib\\nlib___.so\\nlib___.so\\nlib___.a\\nlib___.so\\n/home/maxi/.rustup/toolchains/nightly-2023-06-15-x86_64-unknown-linux-gnu\\noff\\npacked\\nunpacked\\n___\\ndebug_assertions\\noverflow_checks\\npanic=\\\"unwind\\\"\\nproc_macro\\ntarget_abi=\\\"\\\"\\ntarget_arch=\\\"x86_64\\\"\\ntarget_endian=\\\"little\\\"\\ntarget_env=\\\"gnu\\\"\\ntarget_family=\\\"unix\\\"\\ntarget_feature=\\\"fxsr\\\"\\ntarget_feature=\\\"sse\\\"\\ntarget_feature=\\\"sse2\\\"\\ntarget_has_atomic\\ntarget_has_atomic=\\\"16\\\"\\ntarget_has_atomic=\\\"32\\\"\\ntarget_has_atomic=\\\"64\\\"\\ntarget_has_atomic=\\\"8\\\"\\ntarget_has_atomic=\\\"ptr\\\"\\ntarget_has_atomic_equal_alignment=\\\"16\\\"\\ntarget_has_atomic_equal_alignment=\\\"32\\\"\\ntarget_has_atomic_equal_alignment=\\\"64\\\"\\ntarget_has_atomic_equal_alignment=\\\"8\\\"\\ntarget_has_atomic_equal_alignment=\\\"ptr\\\"\\ntarget_has_atomic_load_store\\ntarget_has_atomic_load_store=\\\"16\\\"\\ntarget_has_atomic_load_store=\\\"32\\\"\\ntarget_has_atomic_load_store=\\\"64\\\"\\ntarget_has_atomic_load_store=\\\"8\\\"\\ntarget_has_atomic_load_store=\\\"ptr\\\"\\ntarget_os=\\\"linux\\\"\\ntarget_pointer_width=\\\"64\\\"\\ntarget_thread_local\\ntarget_vendor=\\\"unknown\\\"\\nunix\\n\",\"stderr\":\"\"},\"4614504638168534921\":{\"success\":true,\"status\":\"\",\"code\":0,\"stdout\":\"rustc 1.72.0-nightly (8c74a5d27 2023-06-14)\\nbinary: rustc\\ncommit-hash: 8c74a5d27c644a0f7a22bb2fa8dd3ff8257bc220\\ncommit-date: 2023-06-14\\nhost: x86_64-unknown-linux-gnu\\nrelease: 1.72.0-nightly\\nLLVM version: 16.0.5\\n\",\"stderr\":\"\"}},\"successes\":{}}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../../01/second_half/target/.rustc_info.json b/../../01/second_half/target/.rustc_info.json
+--- a/../../01/second_half/target/.rustc_info.json	(revision 71df5e6dc6319c45aa5bd2298ffbd50689262f65)
++++ b/../../01/second_half/target/.rustc_info.json	(date 1701506367021)
+@@ -1,1 +1,1 @@
+-{"rustc_fingerprint":15452331268264180365,"outputs":{"15729799797837862367":{"success":true,"status":"","code":0,"stdout":"___\nlib___.rlib\nlib___.so\nlib___.so\nlib___.a\nlib___.so\n/home/maxi/.rustup/toolchains/nightly-2023-06-15-x86_64-unknown-linux-gnu\noff\npacked\nunpacked\n___\ndebug_assertions\noverflow_checks\npanic=\"unwind\"\nproc_macro\ntarget_abi=\"\"\ntarget_arch=\"x86_64\"\ntarget_endian=\"little\"\ntarget_env=\"gnu\"\ntarget_family=\"unix\"\ntarget_feature=\"fxsr\"\ntarget_feature=\"sse\"\ntarget_feature=\"sse2\"\ntarget_has_atomic\ntarget_has_atomic=\"16\"\ntarget_has_atomic=\"32\"\ntarget_has_atomic=\"64\"\ntarget_has_atomic=\"8\"\ntarget_has_atomic=\"ptr\"\ntarget_has_atomic_equal_alignment=\"16\"\ntarget_has_atomic_equal_alignment=\"32\"\ntarget_has_atomic_equal_alignment=\"64\"\ntarget_has_atomic_equal_alignment=\"8\"\ntarget_has_atomic_equal_alignment=\"ptr\"\ntarget_has_atomic_load_store\ntarget_has_atomic_load_store=\"16\"\ntarget_has_atomic_load_store=\"32\"\ntarget_has_atomic_load_store=\"64\"\ntarget_has_atomic_load_store=\"8\"\ntarget_has_atomic_load_store=\"ptr\"\ntarget_os=\"linux\"\ntarget_pointer_width=\"64\"\ntarget_thread_local\ntarget_vendor=\"unknown\"\nunix\n","stderr":""},"4614504638168534921":{"success":true,"status":"","code":0,"stdout":"rustc 1.72.0-nightly (8c74a5d27 2023-06-14)\nbinary: rustc\ncommit-hash: 8c74a5d27c644a0f7a22bb2fa8dd3ff8257bc220\ncommit-date: 2023-06-14\nhost: x86_64-unknown-linux-gnu\nrelease: 1.72.0-nightly\nLLVM version: 16.0.5\n","stderr":""}},"successes":{}}
+\ No newline at end of file
++{"rustc_fingerprint":15452331268264180365,"outputs":{"4614504638168534921":{"success":true,"status":"","code":0,"stdout":"rustc 1.72.0-nightly (8c74a5d27 2023-06-14)\nbinary: rustc\ncommit-hash: 8c74a5d27c644a0f7a22bb2fa8dd3ff8257bc220\ncommit-date: 2023-06-14\nhost: x86_64-unknown-linux-gnu\nrelease: 1.72.0-nightly\nLLVM version: 16.0.5\n","stderr":""},"15729799797837862367":{"success":true,"status":"","code":0,"stdout":"___\nlib___.rlib\nlib___.so\nlib___.so\nlib___.a\nlib___.so\n/home/maxi/.rustup/toolchains/nightly-2023-06-15-x86_64-unknown-linux-gnu\noff\npacked\nunpacked\n___\ndebug_assertions\noverflow_checks\npanic=\"unwind\"\nproc_macro\ntarget_abi=\"\"\ntarget_arch=\"x86_64\"\ntarget_endian=\"little\"\ntarget_env=\"gnu\"\ntarget_family=\"unix\"\ntarget_feature=\"fxsr\"\ntarget_feature=\"sse\"\ntarget_feature=\"sse2\"\ntarget_has_atomic\ntarget_has_atomic=\"16\"\ntarget_has_atomic=\"32\"\ntarget_has_atomic=\"64\"\ntarget_has_atomic=\"8\"\ntarget_has_atomic=\"ptr\"\ntarget_has_atomic_equal_alignment=\"16\"\ntarget_has_atomic_equal_alignment=\"32\"\ntarget_has_atomic_equal_alignment=\"64\"\ntarget_has_atomic_equal_alignment=\"8\"\ntarget_has_atomic_equal_alignment=\"ptr\"\ntarget_has_atomic_load_store\ntarget_has_atomic_load_store=\"16\"\ntarget_has_atomic_load_store=\"32\"\ntarget_has_atomic_load_store=\"64\"\ntarget_has_atomic_load_store=\"8\"\ntarget_has_atomic_load_store=\"ptr\"\ntarget_os=\"linux\"\ntarget_pointer_width=\"64\"\ntarget_thread_local\ntarget_vendor=\"unknown\"\nunix\n","stderr":""}},"successes":{}}
+\ No newline at end of file
+Index: ../second_half/Cargo.lock
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../second_half/Cargo.lock b/../second_half/Cargo.lock
+new file mode 100644
+--- /dev/null	(date 1701511880273)
++++ b/../second_half/Cargo.lock	(date 1701511880273)
+@@ -0,0 +1,7 @@
++# This file is automatically @generated by Cargo.
++# It is not intended for manual editing.
++version = 3
++
++[[package]]
++name = "second_half"
++version = "0.1.0"
+Index: ../second_half/src/input.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../second_half/src/input.txt b/../second_half/src/input.txt
+new file mode 100644
+--- /dev/null	(date 1701510879644)
++++ b/../second_half/src/input.txt	(date 1701510879644)
+@@ -0,0 +1,100 @@
++Game 1: 4 green, 7 blue; 2 blue, 4 red; 5 blue, 2 green, 2 red; 1 green, 3 red, 9 blue; 3 green, 9 blue; 7 green, 2 blue, 2 red
++Game 2: 1 blue, 2 red; 1 green, 2 blue, 1 red; 1 red, 5 green; 3 red, 2 blue, 8 green; 3 blue, 2 red, 4 green; 2 blue, 4 green, 3 red
++Game 3: 7 red, 7 blue, 9 green; 15 green, 4 red, 8 blue; 3 green, 12 blue, 6 red
++Game 4: 4 blue, 11 green, 6 red; 4 green, 2 red; 12 red, 1 blue, 3 green
++Game 5: 10 green, 4 blue, 9 red; 3 green, 15 blue, 11 red; 15 blue, 1 green, 2 red; 8 red, 8 blue, 5 green
++Game 6: 5 green, 19 red; 6 green, 13 red, 2 blue; 2 blue, 16 red, 4 green; 13 red, 9 blue, 5 green
++Game 7: 1 blue, 6 red, 6 green; 7 blue, 4 red; 6 green, 1 red, 11 blue; 3 green, 4 blue, 4 red; 6 green, 13 blue, 11 red
++Game 8: 8 green, 2 blue; 20 green, 1 red; 1 blue, 6 red, 6 green; 9 green
++Game 9: 5 red; 4 green, 3 red, 1 blue; 1 blue; 6 red, 1 blue, 9 green
++Game 10: 2 green, 3 red; 18 blue, 20 green, 9 red; 7 red, 9 blue, 17 green
++Game 11: 15 green, 7 blue, 9 red; 7 blue, 10 green, 7 red; 5 red, 3 blue, 10 green; 5 blue, 12 green; 14 green, 8 blue, 5 red; 7 blue, 2 red, 5 green
++Game 12: 3 green, 1 red, 8 blue; 9 blue, 3 red, 3 green; 4 blue, 1 green; 2 red, 3 green, 1 blue; 4 red, 7 blue, 3 green
++Game 13: 14 green, 1 red; 4 green; 2 green, 1 blue; 14 green; 13 green, 1 red, 1 blue; 1 blue, 1 red, 5 green
++Game 14: 1 blue, 6 red, 13 green; 5 red, 10 blue, 3 green; 19 green, 1 red, 14 blue; 4 red, 17 green, 9 blue; 12 green, 10 blue, 7 red
++Game 15: 10 red, 2 blue, 18 green; 17 green, 3 blue, 7 red; 18 blue, 8 red, 12 green; 6 blue, 6 green, 12 red
++Game 16: 14 blue, 5 green, 12 red; 7 green, 3 red, 9 blue; 4 green, 1 red, 8 blue; 9 red, 19 green, 12 blue; 12 blue, 7 red, 6 green; 5 blue, 3 green, 6 red
++Game 17: 1 green, 1 blue, 15 red; 1 blue, 3 green, 12 red; 9 blue, 2 green, 10 red
++Game 18: 12 red, 7 green, 7 blue; 3 blue, 8 red, 1 green; 2 green, 17 red
++Game 19: 1 red, 7 blue, 17 green; 11 red, 15 blue; 11 blue, 18 green; 6 blue, 14 green, 14 red; 16 blue, 8 red, 8 green; 17 green, 9 red, 1 blue
++Game 20: 11 green; 1 blue, 4 green, 7 red; 7 green; 3 red, 1 blue, 6 green
++Game 21: 18 blue, 6 green, 10 red; 12 blue; 9 blue, 2 green, 9 red; 9 red, 20 blue, 1 green; 8 blue, 6 red; 19 blue, 1 green, 4 red
++Game 22: 4 blue, 16 red, 3 green; 7 blue, 3 green, 12 red; 10 red, 7 green, 10 blue; 7 red, 11 blue, 4 green; 3 blue, 1 green, 16 red
++Game 23: 5 green, 8 red, 1 blue; 2 red, 5 blue, 3 green; 2 green, 17 blue, 4 red; 2 blue, 2 red; 7 red, 1 green, 14 blue; 4 red, 8 blue
++Game 24: 1 blue, 3 green, 1 red; 3 blue, 11 green, 15 red; 3 blue, 2 red, 12 green; 9 green, 6 red, 2 blue; 15 green, 12 red, 3 blue; 13 green, 1 blue, 13 red
++Game 25: 6 blue, 5 red, 10 green; 9 red, 3 blue, 3 green; 6 blue, 11 red, 15 green; 7 green, 10 red, 4 blue; 2 red, 20 blue, 11 green
++Game 26: 3 blue, 5 red, 10 green; 7 green, 6 red; 7 green, 1 red, 3 blue; 10 green, 4 red, 3 blue; 4 red, 7 green, 3 blue; 8 green, 4 red
++Game 27: 16 green, 6 blue, 4 red; 3 red, 6 blue, 7 green; 10 green; 6 green, 1 red
++Game 28: 5 green, 5 red, 2 blue; 1 blue, 9 red, 6 green; 2 blue, 3 red; 1 blue, 1 green, 5 red; 4 green, 3 red; 9 green, 1 blue, 14 red
++Game 29: 1 red, 2 green, 13 blue; 1 green, 2 red, 9 blue; 12 red; 3 blue, 5 red
++Game 30: 8 blue, 3 red, 9 green; 10 green, 9 blue; 9 green, 12 blue; 3 blue, 2 red, 4 green; 8 blue, 9 green; 1 red, 12 blue, 6 green
++Game 31: 8 red, 16 blue; 2 red, 1 green, 1 blue; 5 red, 8 blue, 1 green
++Game 32: 3 green, 5 blue, 8 red; 10 blue, 1 red, 3 green; 9 green, 3 blue, 2 red; 2 blue, 1 red, 14 green; 3 blue, 10 red, 16 green
++Game 33: 1 red, 3 green, 2 blue; 15 blue, 1 green; 1 green, 1 red, 10 blue
++Game 34: 4 green, 7 blue; 2 blue, 12 green; 6 red, 14 green, 7 blue
++Game 35: 9 blue, 1 green; 2 green, 6 blue, 11 red; 1 green, 10 red, 1 blue
++Game 36: 5 blue, 1 green, 2 red; 11 blue, 3 green, 5 red; 2 green, 14 blue, 2 red; 3 green, 5 blue, 5 red; 13 blue, 2 green, 5 red; 3 green
++Game 37: 4 blue, 2 red, 8 green; 1 blue, 9 green, 4 red; 1 red, 4 green, 1 blue; 16 green, 3 blue, 4 red
++Game 38: 9 blue, 9 green; 1 green, 3 blue; 8 blue, 6 red, 5 green; 1 green, 9 red, 1 blue
++Game 39: 1 red, 17 green; 1 blue, 7 green, 7 red; 6 red, 4 blue
++Game 40: 1 blue, 2 red; 10 blue, 4 green, 2 red; 1 green, 11 blue, 3 red; 4 blue, 2 green; 3 blue, 4 red
++Game 41: 7 red, 4 blue, 4 green; 10 red, 11 blue, 1 green; 6 red, 6 blue, 4 green; 13 blue, 3 red, 7 green; 9 green, 12 blue, 14 red; 9 blue, 12 red, 10 green
++Game 42: 3 blue, 1 red, 11 green; 4 blue, 9 green, 8 red; 3 red, 5 blue, 1 green
++Game 43: 2 green, 17 blue, 9 red; 16 red, 12 blue, 2 green; 12 red, 12 blue, 7 green; 17 red, 16 blue, 7 green
++Game 44: 2 red, 3 green, 5 blue; 5 red, 5 blue, 7 green; 2 red, 5 blue, 5 green; 6 red, 5 blue, 2 green
++Game 45: 9 green, 1 blue; 1 red, 5 green, 2 blue; 2 blue, 4 green, 9 red; 13 green, 7 red, 1 blue; 3 blue, 4 green
++Game 46: 5 green, 7 red; 8 green, 5 blue, 1 red; 1 blue, 7 red, 17 green
++Game 47: 1 green, 17 blue; 9 blue, 1 green; 1 blue, 1 red
++Game 48: 1 red, 6 green, 7 blue; 9 green, 1 red, 2 blue; 10 blue, 6 green, 1 red; 1 red, 4 green, 9 blue; 6 blue, 3 green, 1 red
++Game 49: 1 red, 1 blue, 16 green; 3 red, 1 green; 16 green; 2 blue, 8 red, 19 green; 20 green, 9 red; 8 green, 6 red
++Game 50: 1 green, 2 blue; 2 red, 3 blue; 4 red, 2 blue; 1 green; 3 blue; 3 blue, 2 green, 1 red
++Game 51: 6 blue, 5 green; 6 red, 5 green; 6 green, 6 blue, 16 red; 10 red, 10 green, 1 blue
++Game 52: 4 red, 5 green, 1 blue; 15 green, 1 blue; 8 green, 5 blue, 5 red; 4 blue, 11 green, 1 red
++Game 53: 5 green, 3 blue, 5 red; 2 red, 4 blue, 1 green; 1 red, 2 green; 11 red
++Game 54: 7 green, 16 blue, 5 red; 5 green; 10 blue, 6 green, 5 red; 3 green
++Game 55: 3 green; 16 green, 1 blue; 13 green, 19 blue, 1 red; 13 green, 18 blue
++Game 56: 9 green; 3 blue, 1 red, 10 green; 1 red, 4 blue, 9 green
++Game 57: 14 blue, 2 red, 3 green; 1 red, 8 blue, 7 green; 1 green, 3 red, 15 blue; 5 green, 12 blue; 4 green, 15 blue
++Game 58: 9 red, 5 green; 10 green, 11 red, 1 blue; 12 green, 17 red, 1 blue; 1 blue, 1 green, 17 red; 14 red, 1 blue, 16 green
++Game 59: 2 red, 12 blue, 10 green; 6 green, 1 red, 14 blue; 14 blue, 9 green, 2 red; 12 green, 14 blue, 2 red
++Game 60: 5 blue, 8 green; 1 red, 6 green, 7 blue; 1 blue
++Game 61: 5 red, 2 blue, 5 green; 2 blue, 11 green; 1 blue, 2 red, 14 green; 3 green; 4 red, 13 green; 2 blue, 6 green, 1 red
++Game 62: 1 red, 1 blue, 2 green; 3 red, 1 blue, 2 green; 1 blue, 10 red; 6 red, 1 blue
++Game 63: 7 red, 6 blue, 4 green; 2 blue, 5 green, 8 red; 5 blue, 4 green, 10 red; 4 blue, 7 red, 10 green; 5 blue, 10 green, 8 red; 4 blue, 10 green, 3 red
++Game 64: 6 red, 7 green, 15 blue; 8 blue, 16 green, 3 red; 11 green, 12 blue; 4 red, 17 blue, 8 green
++Game 65: 2 blue, 7 green; 2 red, 8 blue; 2 green, 1 red, 5 blue; 1 green, 2 blue; 19 green, 7 blue; 2 red, 3 blue, 14 green
++Game 66: 15 green, 7 blue; 9 blue, 3 green, 16 red; 1 red, 1 blue, 16 green; 18 red, 8 blue, 11 green
++Game 67: 1 blue, 1 green, 2 red; 5 green, 8 red, 2 blue; 7 red, 1 blue
++Game 68: 3 blue, 10 red; 13 red, 1 green; 5 blue, 5 red; 2 blue, 1 green, 16 red; 16 red, 3 blue
++Game 69: 7 red, 1 blue, 3 green; 14 green, 2 blue; 3 green, 2 blue; 4 red, 1 green, 1 blue; 10 red, 14 green, 2 blue
++Game 70: 10 green, 12 red; 5 red, 7 green; 1 blue, 6 red, 11 green
++Game 71: 16 green, 13 red, 10 blue; 7 red, 7 blue, 15 green; 17 green, 13 red, 1 blue; 5 blue, 8 green, 11 red; 7 red, 1 blue, 15 green; 15 green, 4 blue, 2 red
++Game 72: 3 blue, 3 red; 2 blue, 3 red, 1 green; 1 red, 1 blue, 3 green; 1 green, 2 blue, 3 red; 3 blue, 1 green, 1 red; 1 blue, 4 red
++Game 73: 10 blue, 11 red, 5 green; 6 green, 9 blue, 4 red; 10 red, 5 green, 9 blue
++Game 74: 6 green, 17 blue; 1 red, 1 blue, 11 green; 2 blue, 1 red, 3 green
++Game 75: 11 red, 11 green, 3 blue; 11 red, 1 blue, 6 green; 4 green, 3 blue, 8 red
++Game 76: 3 green, 3 blue, 12 red; 3 blue, 15 green, 3 red; 4 red, 15 green, 2 blue
++Game 77: 13 blue, 11 red, 1 green; 3 red, 12 green, 12 blue; 7 red, 15 green, 4 blue; 5 red, 2 green, 3 blue
++Game 78: 4 red, 8 blue, 2 green; 7 blue, 3 green, 7 red; 3 green, 13 blue; 3 red, 4 green
++Game 79: 7 blue, 13 red, 8 green; 7 green, 15 red, 9 blue; 2 green, 8 red, 10 blue; 13 blue, 20 red, 7 green; 11 red, 2 green, 14 blue
++Game 80: 12 red; 2 blue, 15 red, 3 green; 1 blue, 1 green, 2 red; 1 green; 1 green, 3 blue, 13 red; 1 green, 2 blue, 1 red
++Game 81: 11 blue; 6 blue, 8 green, 4 red; 7 blue, 1 red, 1 green
++Game 82: 9 blue, 1 red; 3 blue, 1 red, 3 green; 8 blue, 8 green, 2 red; 5 blue
++Game 83: 7 blue, 13 red; 4 blue, 2 green, 3 red; 15 blue, 9 red, 1 green; 14 red, 1 green, 12 blue
++Game 84: 8 blue, 1 green, 20 red; 9 green, 20 red, 18 blue; 16 red, 15 blue, 5 green; 15 red, 10 green, 16 blue; 11 green, 14 red, 12 blue
++Game 85: 1 red, 2 blue, 9 green; 13 green, 3 blue, 5 red; 1 green, 1 red, 3 blue; 8 green, 2 blue, 1 red
++Game 86: 10 red, 6 blue, 11 green; 1 red, 11 green; 7 blue, 6 red, 11 green
++Game 87: 14 red, 4 blue, 4 green; 14 red, 4 blue, 7 green; 12 red, 11 green, 5 blue; 5 blue, 12 red
++Game 88: 3 green, 4 blue, 11 red; 3 green, 4 blue, 3 red; 10 red, 3 green; 3 blue, 2 red, 2 green
++Game 89: 4 blue, 2 red, 3 green; 3 green, 7 red, 13 blue; 1 green, 6 blue
++Game 90: 7 red; 5 blue, 11 red, 8 green; 8 red, 3 green, 2 blue
++Game 91: 2 blue; 4 red; 2 blue, 4 green; 3 green, 1 blue, 1 red
++Game 92: 7 blue, 10 green; 9 green, 9 blue, 7 red; 6 green; 12 red, 1 blue, 4 green; 5 red, 1 green, 13 blue
++Game 93: 7 green, 6 red, 1 blue; 3 red, 6 green, 8 blue; 1 blue, 6 green; 6 red, 15 blue, 4 green; 10 blue, 2 green, 6 red; 3 green, 5 red, 6 blue
++Game 94: 5 red, 1 green, 15 blue; 1 blue, 6 red; 2 red, 6 blue, 2 green
++Game 95: 9 blue, 4 red, 17 green; 15 green, 9 red, 10 blue; 1 blue, 13 green, 12 red
++Game 96: 1 blue, 12 green, 1 red; 3 blue, 1 green, 5 red; 2 blue, 8 red, 10 green
++Game 97: 18 blue, 7 red, 11 green; 6 red, 3 blue, 14 green; 1 red, 13 blue, 4 green
++Game 98: 5 blue, 2 green, 8 red; 12 red; 13 red, 4 blue, 4 green; 7 red, 11 blue; 10 blue, 2 green, 2 red; 6 red, 12 blue
++Game 99: 4 green, 2 blue, 4 red; 9 blue, 11 red, 1 green; 5 green
++Game 100: 2 blue, 12 green; 6 green, 1 red, 12 blue; 1 green, 5 blue, 1 red; 1 red, 12 green, 6 blue; 16 blue, 3 green
+Index: src/input.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/input.txt b/src/input.txt
+new file mode 100644
+--- /dev/null	(date 1701510879644)
++++ b/src/input.txt	(date 1701510879644)
+@@ -0,0 +1,100 @@
++Game 1: 4 green, 7 blue; 2 blue, 4 red; 5 blue, 2 green, 2 red; 1 green, 3 red, 9 blue; 3 green, 9 blue; 7 green, 2 blue, 2 red
++Game 2: 1 blue, 2 red; 1 green, 2 blue, 1 red; 1 red, 5 green; 3 red, 2 blue, 8 green; 3 blue, 2 red, 4 green; 2 blue, 4 green, 3 red
++Game 3: 7 red, 7 blue, 9 green; 15 green, 4 red, 8 blue; 3 green, 12 blue, 6 red
++Game 4: 4 blue, 11 green, 6 red; 4 green, 2 red; 12 red, 1 blue, 3 green
++Game 5: 10 green, 4 blue, 9 red; 3 green, 15 blue, 11 red; 15 blue, 1 green, 2 red; 8 red, 8 blue, 5 green
++Game 6: 5 green, 19 red; 6 green, 13 red, 2 blue; 2 blue, 16 red, 4 green; 13 red, 9 blue, 5 green
++Game 7: 1 blue, 6 red, 6 green; 7 blue, 4 red; 6 green, 1 red, 11 blue; 3 green, 4 blue, 4 red; 6 green, 13 blue, 11 red
++Game 8: 8 green, 2 blue; 20 green, 1 red; 1 blue, 6 red, 6 green; 9 green
++Game 9: 5 red; 4 green, 3 red, 1 blue; 1 blue; 6 red, 1 blue, 9 green
++Game 10: 2 green, 3 red; 18 blue, 20 green, 9 red; 7 red, 9 blue, 17 green
++Game 11: 15 green, 7 blue, 9 red; 7 blue, 10 green, 7 red; 5 red, 3 blue, 10 green; 5 blue, 12 green; 14 green, 8 blue, 5 red; 7 blue, 2 red, 5 green
++Game 12: 3 green, 1 red, 8 blue; 9 blue, 3 red, 3 green; 4 blue, 1 green; 2 red, 3 green, 1 blue; 4 red, 7 blue, 3 green
++Game 13: 14 green, 1 red; 4 green; 2 green, 1 blue; 14 green; 13 green, 1 red, 1 blue; 1 blue, 1 red, 5 green
++Game 14: 1 blue, 6 red, 13 green; 5 red, 10 blue, 3 green; 19 green, 1 red, 14 blue; 4 red, 17 green, 9 blue; 12 green, 10 blue, 7 red
++Game 15: 10 red, 2 blue, 18 green; 17 green, 3 blue, 7 red; 18 blue, 8 red, 12 green; 6 blue, 6 green, 12 red
++Game 16: 14 blue, 5 green, 12 red; 7 green, 3 red, 9 blue; 4 green, 1 red, 8 blue; 9 red, 19 green, 12 blue; 12 blue, 7 red, 6 green; 5 blue, 3 green, 6 red
++Game 17: 1 green, 1 blue, 15 red; 1 blue, 3 green, 12 red; 9 blue, 2 green, 10 red
++Game 18: 12 red, 7 green, 7 blue; 3 blue, 8 red, 1 green; 2 green, 17 red
++Game 19: 1 red, 7 blue, 17 green; 11 red, 15 blue; 11 blue, 18 green; 6 blue, 14 green, 14 red; 16 blue, 8 red, 8 green; 17 green, 9 red, 1 blue
++Game 20: 11 green; 1 blue, 4 green, 7 red; 7 green; 3 red, 1 blue, 6 green
++Game 21: 18 blue, 6 green, 10 red; 12 blue; 9 blue, 2 green, 9 red; 9 red, 20 blue, 1 green; 8 blue, 6 red; 19 blue, 1 green, 4 red
++Game 22: 4 blue, 16 red, 3 green; 7 blue, 3 green, 12 red; 10 red, 7 green, 10 blue; 7 red, 11 blue, 4 green; 3 blue, 1 green, 16 red
++Game 23: 5 green, 8 red, 1 blue; 2 red, 5 blue, 3 green; 2 green, 17 blue, 4 red; 2 blue, 2 red; 7 red, 1 green, 14 blue; 4 red, 8 blue
++Game 24: 1 blue, 3 green, 1 red; 3 blue, 11 green, 15 red; 3 blue, 2 red, 12 green; 9 green, 6 red, 2 blue; 15 green, 12 red, 3 blue; 13 green, 1 blue, 13 red
++Game 25: 6 blue, 5 red, 10 green; 9 red, 3 blue, 3 green; 6 blue, 11 red, 15 green; 7 green, 10 red, 4 blue; 2 red, 20 blue, 11 green
++Game 26: 3 blue, 5 red, 10 green; 7 green, 6 red; 7 green, 1 red, 3 blue; 10 green, 4 red, 3 blue; 4 red, 7 green, 3 blue; 8 green, 4 red
++Game 27: 16 green, 6 blue, 4 red; 3 red, 6 blue, 7 green; 10 green; 6 green, 1 red
++Game 28: 5 green, 5 red, 2 blue; 1 blue, 9 red, 6 green; 2 blue, 3 red; 1 blue, 1 green, 5 red; 4 green, 3 red; 9 green, 1 blue, 14 red
++Game 29: 1 red, 2 green, 13 blue; 1 green, 2 red, 9 blue; 12 red; 3 blue, 5 red
++Game 30: 8 blue, 3 red, 9 green; 10 green, 9 blue; 9 green, 12 blue; 3 blue, 2 red, 4 green; 8 blue, 9 green; 1 red, 12 blue, 6 green
++Game 31: 8 red, 16 blue; 2 red, 1 green, 1 blue; 5 red, 8 blue, 1 green
++Game 32: 3 green, 5 blue, 8 red; 10 blue, 1 red, 3 green; 9 green, 3 blue, 2 red; 2 blue, 1 red, 14 green; 3 blue, 10 red, 16 green
++Game 33: 1 red, 3 green, 2 blue; 15 blue, 1 green; 1 green, 1 red, 10 blue
++Game 34: 4 green, 7 blue; 2 blue, 12 green; 6 red, 14 green, 7 blue
++Game 35: 9 blue, 1 green; 2 green, 6 blue, 11 red; 1 green, 10 red, 1 blue
++Game 36: 5 blue, 1 green, 2 red; 11 blue, 3 green, 5 red; 2 green, 14 blue, 2 red; 3 green, 5 blue, 5 red; 13 blue, 2 green, 5 red; 3 green
++Game 37: 4 blue, 2 red, 8 green; 1 blue, 9 green, 4 red; 1 red, 4 green, 1 blue; 16 green, 3 blue, 4 red
++Game 38: 9 blue, 9 green; 1 green, 3 blue; 8 blue, 6 red, 5 green; 1 green, 9 red, 1 blue
++Game 39: 1 red, 17 green; 1 blue, 7 green, 7 red; 6 red, 4 blue
++Game 40: 1 blue, 2 red; 10 blue, 4 green, 2 red; 1 green, 11 blue, 3 red; 4 blue, 2 green; 3 blue, 4 red
++Game 41: 7 red, 4 blue, 4 green; 10 red, 11 blue, 1 green; 6 red, 6 blue, 4 green; 13 blue, 3 red, 7 green; 9 green, 12 blue, 14 red; 9 blue, 12 red, 10 green
++Game 42: 3 blue, 1 red, 11 green; 4 blue, 9 green, 8 red; 3 red, 5 blue, 1 green
++Game 43: 2 green, 17 blue, 9 red; 16 red, 12 blue, 2 green; 12 red, 12 blue, 7 green; 17 red, 16 blue, 7 green
++Game 44: 2 red, 3 green, 5 blue; 5 red, 5 blue, 7 green; 2 red, 5 blue, 5 green; 6 red, 5 blue, 2 green
++Game 45: 9 green, 1 blue; 1 red, 5 green, 2 blue; 2 blue, 4 green, 9 red; 13 green, 7 red, 1 blue; 3 blue, 4 green
++Game 46: 5 green, 7 red; 8 green, 5 blue, 1 red; 1 blue, 7 red, 17 green
++Game 47: 1 green, 17 blue; 9 blue, 1 green; 1 blue, 1 red
++Game 48: 1 red, 6 green, 7 blue; 9 green, 1 red, 2 blue; 10 blue, 6 green, 1 red; 1 red, 4 green, 9 blue; 6 blue, 3 green, 1 red
++Game 49: 1 red, 1 blue, 16 green; 3 red, 1 green; 16 green; 2 blue, 8 red, 19 green; 20 green, 9 red; 8 green, 6 red
++Game 50: 1 green, 2 blue; 2 red, 3 blue; 4 red, 2 blue; 1 green; 3 blue; 3 blue, 2 green, 1 red
++Game 51: 6 blue, 5 green; 6 red, 5 green; 6 green, 6 blue, 16 red; 10 red, 10 green, 1 blue
++Game 52: 4 red, 5 green, 1 blue; 15 green, 1 blue; 8 green, 5 blue, 5 red; 4 blue, 11 green, 1 red
++Game 53: 5 green, 3 blue, 5 red; 2 red, 4 blue, 1 green; 1 red, 2 green; 11 red
++Game 54: 7 green, 16 blue, 5 red; 5 green; 10 blue, 6 green, 5 red; 3 green
++Game 55: 3 green; 16 green, 1 blue; 13 green, 19 blue, 1 red; 13 green, 18 blue
++Game 56: 9 green; 3 blue, 1 red, 10 green; 1 red, 4 blue, 9 green
++Game 57: 14 blue, 2 red, 3 green; 1 red, 8 blue, 7 green; 1 green, 3 red, 15 blue; 5 green, 12 blue; 4 green, 15 blue
++Game 58: 9 red, 5 green; 10 green, 11 red, 1 blue; 12 green, 17 red, 1 blue; 1 blue, 1 green, 17 red; 14 red, 1 blue, 16 green
++Game 59: 2 red, 12 blue, 10 green; 6 green, 1 red, 14 blue; 14 blue, 9 green, 2 red; 12 green, 14 blue, 2 red
++Game 60: 5 blue, 8 green; 1 red, 6 green, 7 blue; 1 blue
++Game 61: 5 red, 2 blue, 5 green; 2 blue, 11 green; 1 blue, 2 red, 14 green; 3 green; 4 red, 13 green; 2 blue, 6 green, 1 red
++Game 62: 1 red, 1 blue, 2 green; 3 red, 1 blue, 2 green; 1 blue, 10 red; 6 red, 1 blue
++Game 63: 7 red, 6 blue, 4 green; 2 blue, 5 green, 8 red; 5 blue, 4 green, 10 red; 4 blue, 7 red, 10 green; 5 blue, 10 green, 8 red; 4 blue, 10 green, 3 red
++Game 64: 6 red, 7 green, 15 blue; 8 blue, 16 green, 3 red; 11 green, 12 blue; 4 red, 17 blue, 8 green
++Game 65: 2 blue, 7 green; 2 red, 8 blue; 2 green, 1 red, 5 blue; 1 green, 2 blue; 19 green, 7 blue; 2 red, 3 blue, 14 green
++Game 66: 15 green, 7 blue; 9 blue, 3 green, 16 red; 1 red, 1 blue, 16 green; 18 red, 8 blue, 11 green
++Game 67: 1 blue, 1 green, 2 red; 5 green, 8 red, 2 blue; 7 red, 1 blue
++Game 68: 3 blue, 10 red; 13 red, 1 green; 5 blue, 5 red; 2 blue, 1 green, 16 red; 16 red, 3 blue
++Game 69: 7 red, 1 blue, 3 green; 14 green, 2 blue; 3 green, 2 blue; 4 red, 1 green, 1 blue; 10 red, 14 green, 2 blue
++Game 70: 10 green, 12 red; 5 red, 7 green; 1 blue, 6 red, 11 green
++Game 71: 16 green, 13 red, 10 blue; 7 red, 7 blue, 15 green; 17 green, 13 red, 1 blue; 5 blue, 8 green, 11 red; 7 red, 1 blue, 15 green; 15 green, 4 blue, 2 red
++Game 72: 3 blue, 3 red; 2 blue, 3 red, 1 green; 1 red, 1 blue, 3 green; 1 green, 2 blue, 3 red; 3 blue, 1 green, 1 red; 1 blue, 4 red
++Game 73: 10 blue, 11 red, 5 green; 6 green, 9 blue, 4 red; 10 red, 5 green, 9 blue
++Game 74: 6 green, 17 blue; 1 red, 1 blue, 11 green; 2 blue, 1 red, 3 green
++Game 75: 11 red, 11 green, 3 blue; 11 red, 1 blue, 6 green; 4 green, 3 blue, 8 red
++Game 76: 3 green, 3 blue, 12 red; 3 blue, 15 green, 3 red; 4 red, 15 green, 2 blue
++Game 77: 13 blue, 11 red, 1 green; 3 red, 12 green, 12 blue; 7 red, 15 green, 4 blue; 5 red, 2 green, 3 blue
++Game 78: 4 red, 8 blue, 2 green; 7 blue, 3 green, 7 red; 3 green, 13 blue; 3 red, 4 green
++Game 79: 7 blue, 13 red, 8 green; 7 green, 15 red, 9 blue; 2 green, 8 red, 10 blue; 13 blue, 20 red, 7 green; 11 red, 2 green, 14 blue
++Game 80: 12 red; 2 blue, 15 red, 3 green; 1 blue, 1 green, 2 red; 1 green; 1 green, 3 blue, 13 red; 1 green, 2 blue, 1 red
++Game 81: 11 blue; 6 blue, 8 green, 4 red; 7 blue, 1 red, 1 green
++Game 82: 9 blue, 1 red; 3 blue, 1 red, 3 green; 8 blue, 8 green, 2 red; 5 blue
++Game 83: 7 blue, 13 red; 4 blue, 2 green, 3 red; 15 blue, 9 red, 1 green; 14 red, 1 green, 12 blue
++Game 84: 8 blue, 1 green, 20 red; 9 green, 20 red, 18 blue; 16 red, 15 blue, 5 green; 15 red, 10 green, 16 blue; 11 green, 14 red, 12 blue
++Game 85: 1 red, 2 blue, 9 green; 13 green, 3 blue, 5 red; 1 green, 1 red, 3 blue; 8 green, 2 blue, 1 red
++Game 86: 10 red, 6 blue, 11 green; 1 red, 11 green; 7 blue, 6 red, 11 green
++Game 87: 14 red, 4 blue, 4 green; 14 red, 4 blue, 7 green; 12 red, 11 green, 5 blue; 5 blue, 12 red
++Game 88: 3 green, 4 blue, 11 red; 3 green, 4 blue, 3 red; 10 red, 3 green; 3 blue, 2 red, 2 green
++Game 89: 4 blue, 2 red, 3 green; 3 green, 7 red, 13 blue; 1 green, 6 blue
++Game 90: 7 red; 5 blue, 11 red, 8 green; 8 red, 3 green, 2 blue
++Game 91: 2 blue; 4 red; 2 blue, 4 green; 3 green, 1 blue, 1 red
++Game 92: 7 blue, 10 green; 9 green, 9 blue, 7 red; 6 green; 12 red, 1 blue, 4 green; 5 red, 1 green, 13 blue
++Game 93: 7 green, 6 red, 1 blue; 3 red, 6 green, 8 blue; 1 blue, 6 green; 6 red, 15 blue, 4 green; 10 blue, 2 green, 6 red; 3 green, 5 red, 6 blue
++Game 94: 5 red, 1 green, 15 blue; 1 blue, 6 red; 2 red, 6 blue, 2 green
++Game 95: 9 blue, 4 red, 17 green; 15 green, 9 red, 10 blue; 1 blue, 13 green, 12 red
++Game 96: 1 blue, 12 green, 1 red; 3 blue, 1 green, 5 red; 2 blue, 8 red, 10 green
++Game 97: 18 blue, 7 red, 11 green; 6 red, 3 blue, 14 green; 1 red, 13 blue, 4 green
++Game 98: 5 blue, 2 green, 8 red; 12 red; 13 red, 4 blue, 4 green; 7 red, 11 blue; 10 blue, 2 green, 2 red; 6 red, 12 blue
++Game 99: 4 green, 2 blue, 4 red; 9 blue, 11 red, 1 green; 5 green
++Game 100: 2 blue, 12 green; 6 green, 1 red, 12 blue; 1 green, 5 blue, 1 red; 1 red, 12 green, 6 blue; 16 blue, 3 green
+Index: Cargo.lock
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Cargo.lock b/Cargo.lock
+new file mode 100644
+--- /dev/null	(date 1701506620771)
++++ b/Cargo.lock	(date 1701506620771)
+@@ -0,0 +1,7 @@
++# This file is automatically @generated by Cargo.
++# It is not intended for manual editing.
++version = 3
++
++[[package]]
++name = "first_half"
++version = "0.1.0"
+Index: ../second_half/src/main.rs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../second_half/src/main.rs b/../second_half/src/main.rs
+new file mode 100644
+--- /dev/null	(date 1701512316460)
++++ b/../second_half/src/main.rs	(date 1701512316460)
+@@ -0,0 +1,80 @@
++use std::fs::File;
++use std::io::{self, BufRead, BufReader};
++use std::process::exit;
++
++mod test;
++fn main() {
++    let games = read_file_to_bags("src/input.txt");
++
++    let sum = get_sum_of_vec(games);
++
++    println!("Your id sum is: {}",sum);
++}
++
++fn read_file_to_bags(path:&str) -> Vec<i32>{
++
++    let mut powers:Vec<i32> = Vec::new();
++
++    let file:File = File::open(path).unwrap();
++
++    let reader = BufReader::new(file);
++
++    for line in reader.lines() {
++        let line = line.expect("fuk");
++        let parts: Vec<&str>= line.split(":").collect();
++        let mut is_ok:bool = true;
++        let cube_line = parts[1];
++        let parts:Vec<&str> = parts[0].split(" ").collect();
++
++        let mut max_red = 0;
++        let mut max_blue = 0;
++        let mut max_green= 0;
++
++
++        let cubesss:Vec<&str> = cube_line.split(";").collect();
++
++        for cubess in cubesss{
++            let cubes:Vec<&str> = cubess.split(",").collect();
++            for cube in cubes {
++                let parts: Vec<&str> = cube.trim().split(" ").collect();
++                let color:&str = parts[1];
++                let amount:i32 = parts[0].parse().expect("Failed to parse amount to i32");
++
++                if color == "red" {
++                    if amount > max_red{
++                        max_red = amount
++                    }
++                } else if color == "blue" {
++                    if amount > max_blue{
++                        max_blue = amount
++                    }
++                } else if color == "green" {
++                    if amount > max_green{
++                        max_green = amount
++                    }
++                } else {
++                    exit(1)
++                }
++            }
++
++        }
++
++
++
++        powers.push((max_red*max_green*max_blue));
++
++    }
++
++    return powers
++}
++
++
++fn get_sum_of_vec(nums:Vec<i32>) -> i32 {
++    let mut out = 0;
++    for v in nums {
++        out += v;
++    }
++    return out;
++}
++
++
+Index: .idea/first_half.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/first_half.iml b/.idea/first_half.iml
+new file mode 100644
+--- /dev/null	(date 1701506636608)
++++ b/.idea/first_half.iml	(date 1701506636608)
+@@ -0,0 +1,11 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="EMPTY_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++      <excludeFolder url="file://$MODULE_DIR$/target" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
+\ No newline at end of file
+Index: ../second_half/src/test.rs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../second_half/src/test.rs b/../second_half/src/test.rs
+new file mode 100644
+--- /dev/null	(date 1701512299577)
++++ b/../second_half/src/test.rs	(date 1701512299577)
+@@ -0,0 +1,12 @@
++#[cfg(test)]
++mod tests {
++    use crate::{ get_sum_of_vec, read_file_to_bags};
++
++    #[test]
++    fn play_game_t1() {
++        let games = read_file_to_bags("src/testGame.txt");
++
++        let sum = get_sum_of_vec(games);
++        assert_eq!(sum, 2286)
++    }
++}
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1701506636615)
++++ b/.idea/modules.xml	(date 1701506636615)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/first_half.iml" filepath="$PROJECT_DIR$/.idea/first_half.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: ../second_half/src/testGame.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/../second_half/src/testGame.txt b/../second_half/src/testGame.txt
+new file mode 100644
+--- /dev/null	(date 1701507534974)
++++ b/../second_half/src/testGame.txt	(date 1701507534974)
+@@ -0,0 +1,5 @@
++Game 1: 3 blue, 4 red; 1 red, 2 green, 6 blue; 2 green
++Game 2: 1 blue, 2 green; 3 green, 4 blue, 1 red; 1 green, 1 blue
++Game 3: 8 green, 6 blue, 20 red; 5 blue, 4 red, 13 green; 5 green, 1 red
++Game 4: 1 green, 3 red, 6 blue; 3 green, 6 red; 3 green, 15 blue, 14 red
++Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
+\ No newline at end of file

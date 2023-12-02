@@ -48,15 +48,15 @@ And i wish you good luck , and if you get stuck, don't give up. Take a break and
 
 --------------------------------
 
-[ ] Day 2 | part 1 - [Title Day 2](https://adventofcode.com/2023/day/2)
+[x] Day 2 | part 1 - [Cube Conundrum](https://adventofcode.com/2023/day/2) - time took from 9:30 to 11:05 (+- 10 min)
 
-[ ] Day 2 | part 2 - [Title Day 2](https://adventofcode.com/2023/day/2)
+[x] Day 2 | part 2 - [Cube Conundrum part 2](https://adventofcode.com/2023/day/2) - time took from 11:05 to 11:20 (+- 2 min)
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 2285
 
-  part 2: none yet
+  part 2: 77021
 </details>
 
 --------------------------------
