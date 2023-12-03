@@ -1,12 +1,13 @@
+use std::collections::hash_map::VacantEntry;
 use std::fs::File;
 use std::io::{BufReader, self, BufRead};
 mod test;
 
 fn main() {
     let blueprint = read_file_to_vec("src/input.txt");
-    let numbers = find_parts_numbers(blueprint);
-    let sum = sum_of_vec(numbers);
-    println!("your sum is: {}", sum);
+    let sum = combine_numbers(blueprint);
+    let gear_number = get_gear_numbers_of_a_vec(sum);
+    println!("your gear number is: {:?}", gear_number);
 }
 
 fn read_file_to_vec(path:&str) -> Vec<Vec<char>>{
@@ -24,126 +25,73 @@ fn read_file_to_vec(path:&str) -> Vec<Vec<char>>{
     return parts;
 }
 
-fn check_if_is_symbol(c:char) -> bool{
-    if c.is_ascii_punctuation() && c != '.'{
-        return true;
-    }
-    return false;
-}
+fn combine_numbers(parts: Vec<Vec<char>>) -> Vec<Vec<String>> {
+    let mut new_parts: Vec<Vec<String>> = Vec::new();
 
-fn find_symbols_around(parts:Vec<Vec<char>>, y:usize, x_begin:usize, x_end:usize) -> bool{
-    let mut out:bool = false;
+    for part in parts {
+        let mut new_part: Vec<String> = Vec::new();
+        let mut number = String::new();
 
-        if x_begin != 0{
-            if check_if_is_symbol(parts[y][x_begin-1]){
-                out = true;
-            }
-            if y != 0 {
-                if check_if_is_symbol(parts[y-1][x_begin-1]){
-                    out = true;
-                }
-
-            }
-            if y < parts.len() - 1 {
-                if check_if_is_symbol(parts[y+1][x_begin-1]){
-                    out = true;
-                }
-
-            }
-
-        }
-        if x_end < parts[y].len() - 1{
-            if check_if_is_symbol(parts[y][x_end+1]){
-                out = true;
-            }
-            if y != 0 {
-                if check_if_is_symbol(parts[y-1][x_end+1]){
-                    out = true;
-                }
-            }
-            if y < parts.len() - 1 {
-                if check_if_is_symbol(parts[y+1][x_end+1]){
-                    out = true;
-                }
-            }
-        }
-
-
-    if y != 0 {
-        for i in 0..(x_end+1 - x_begin ) {
-            if check_if_is_symbol(parts[y-1][x_begin + i ]){
-                out = true;
-            }
-        }
-    }
-    if y < parts.len() - 1 {
-        for i in 0..(x_end+1 - x_begin ){
-            if check_if_is_symbol(parts[y+1][x_begin+i]){
-                out = true;
-            }
-        }
-    }
-
-    return out
-}
-
-fn get_number_from_vec(parts:Vec<Vec<char>>, y:usize, x_begin:usize, x_end:usize) -> i32{
-    let mut numbers:Vec<char> = Vec::new();
-    let mut number = 0;
-    for i in x_begin..x_end {
-        numbers.push(parts[y][i]);
-    }
-    for (i,c) in numbers.iter().enumerate() {
-        number += numbers[(numbers.len()-1)-i].to_digit(10).unwrap() as i32 * 10_i32.pow(i as u32)
-    }
-    return number;
-}
-
-fn find_parts_numbers(parts:Vec<Vec<char>>) -> Vec<i32>{
-    let mut is_a_number = false;
-    let mut x_begin = 0;
-    let mut x_end = 0;
-    let mut y = 0;
-    let mut real_parts:Vec<i32> = Vec::new();
-
-    for (i,part) in parts.iter().enumerate() {
-
-        for (j,p) in part.iter().enumerate() {
-            if p.is_numeric() && !is_a_number{
-                is_a_number = true;
-                x_begin = j;
-                x_end = j;
-                y = i;
-            }
-            if is_a_number {
-
-                if p.is_numeric() && y == i {
-                    x_end += 1;
-                } else {
-                    is_a_number = false;
-                    if find_symbols_around(parts.clone(), y,x_begin, x_end-1){
-                        real_parts.push(get_number_from_vec(parts.clone(), y,x_begin, x_end))
-                    }
-                }
+        for &char in &part {
+            if char.is_digit(10) {
+                number.push(char);
             } else {
-
+                if !number.is_empty() {
+                    for _ in number.chars() {
+                        new_part.push(number.clone());
+                    }
+                    number = String::new();
+                }
+                new_part.push(char.to_string());
             }
         }
-        if is_a_number {
-            is_a_number = false;
-            if find_symbols_around(parts.clone(), y,x_begin, x_end-1){
-                real_parts.push(get_number_from_vec(parts.clone(), y,x_begin, x_end))
+
+        if !number.is_empty() {
+            for _ in number.chars() {
+                new_part.push(number.clone());
+            }
+        }
+
+        new_parts.push(new_part);
+    }
+
+    new_parts
+}
+
+fn get_gear_numbers_of_a_vec(list:Vec<Vec<String>>) -> i32{
+    let mut int = 0;
+
+    for (x, row) in list.iter().enumerate() {
+        for (y, _) in row.iter().enumerate() {
+            if list[x][y] == "*" {
+                int += get_gear_num(list.clone(), x, y);
             }
         }
     }
-    return real_parts;
+
+    return int;
 }
 
-fn sum_of_vec(numbers:Vec<i32>) -> i32{
-    let mut sum = 0;
-    for number in numbers {
-        sum += number;
+fn get_gear_num(list:Vec<Vec<String>>, x:usize, y:usize) -> i32 {
+    let mut unique_numbers = Vec::new();
+    let directions = [(-1, 0), (1, 0), (0, -1), (0, 1), (-1, -1), (-1, 1), (1, -1), (1, 1)];
+
+    for (dx, dy) in &directions {
+        let new_x = x as i32 + dx;
+        let new_y = y as i32 + dy;
+
+        if new_x >= 0 && new_y >= 0 && new_x < list.len() as i32 && new_y < list[0].len() as i32 {
+            if let Ok(num) = list[new_x as usize][new_y as usize].parse::<i32>() {
+                if !unique_numbers.contains(&num) {
+                    unique_numbers.push(num);
+                }
+            }
+        }
     }
-    return sum;
-}
 
+    if unique_numbers.len() == 2 {
+        unique_numbers[0] * unique_numbers[1]
+    } else {
+        0
+    }
+}

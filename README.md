@@ -33,7 +33,7 @@ And i wish you good luck , and if you get stuck, don't give up. Take a break and
 🎄🎄🎄🎄🎄🎄🎄
 
 ---
-
+ps: if the time is without breaks, if there are any breaks i will write them down.
 
 [x] Day 1 | part 1 - [Trebuchet?!](https://adventofcode.com/2023/day/1) - time took from 8:30 to 9:00 (+- 15 min)
 
@@ -61,15 +61,15 @@ And i wish you good luck , and if you get stuck, don't give up. Take a break and
 
 --------------------------------
 
-[ ] Day 3 | part 1 - [Title Day 3](https://adventofcode.com/2023/day/3)
+[x] Day 3 | part 1 - [Gear Ratios](https://adventofcode.com/2023/day/3) - time took from 9:35 to 12:55 (+- 5 min)
 
-[ ] Day 3 | part 2 - [Title Day 3 part 2](https://adventofcode.com/2023/day/3)
+[x] Day 3 | part 2 - [Gear Ratios part 2](https://adventofcode.com/2023/day/3) - time took from 12:55 to 14:10 (+- 5 min)
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 549908
 
-  part 2: none yet
+  part 2: 81166799
 </details>
 
 --------------------------------

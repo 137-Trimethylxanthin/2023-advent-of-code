@@ -8,19 +8,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51b9f547-337a-456d-aa08-cd5be6683c6f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/first_half.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/testGame.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second_half/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second_half/src/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second_half/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second_half/src/test.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../second_half/src/testGame.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../01/second_half/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../01/second_half/target/.rustc_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03/first_half/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03/first_half/.idea/first_half.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03/first_half/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03/first_half/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03/first_half/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03/first_half/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03/first_half/src/test.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../03/first_half/src/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/.rustc_info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,6 +123,8 @@
       <workItem from="1701506621014" duration="5249000" />
       <workItem from="1701511895292" duration="22000" />
       <workItem from="1701512339281" duration="44000" />
+      <workItem from="1701593093716" duration="24000" />
+      <workItem from="1701593476440" duration="5000" />
     </task>
     <servers />
   </component>
