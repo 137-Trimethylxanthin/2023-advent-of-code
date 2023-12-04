@@ -74,15 +74,15 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[ ] Day 4 | part 1 - [Title Day 4](https://adventofcode.com/2023/day/4)
+[x] Day 4 | part 1 - [Scratchcards](https://adventofcode.com/2023/day/4) - time took from 12:40 to 13:00 (+- 5 min) // Easy
 
-[ ] Day 4 | part 2 - [Title Day 4 part 2](https://adventofcode.com/2023/day/4)
+[x] Day 4 | part 2 - [Scratchcards part 2](https://adventofcode.com/2023/day/4) - time took from 13:00 to 15:20 (+- 5 min) // WHY RECURSIVE TAKE SO LONG (236 seconds to be exact)
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 21568
 
-  part 2: none yet
+  part 2: 11827296
 </details>
 
 --------------------------------
