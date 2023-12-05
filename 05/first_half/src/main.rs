@@ -79,7 +79,7 @@ fn read_file_to_vec(path:&str) -> i64 {
     let min_location = locations.iter().min().unwrap();
     println!("The lowest location number is {}", min_location);
 
-    0
+    min_location.clone()
 }
 
 fn convert_number(num: i64, map: &Vec<(i64, i64, i64)>) -> i64 {

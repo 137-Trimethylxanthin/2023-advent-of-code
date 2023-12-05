@@ -1,26 +1,26 @@
 use std::fs;
-use std::fs::File;
-use std::io::{BufRead, BufReader, Read};
-use std::process::exit;
+use std::io::{BufRead, Read};
 use std::str::FromStr;
 use regex::Regex;
 
 mod test;
 
-fn extract_numbers(s: &str) -> Vec<i64> {
+fn extract_numbers(s: &str) -> Vec<u64> {
     let re = Regex::new(r"\d+").unwrap();
     re.captures_iter(s)
-        .map(|cap| i64::from_str(&cap[0]).unwrap())
+        .map(|cap| u64::from_str(&cap[0]).unwrap())
         .collect()
 }
 
 fn main() {
+    let timer = std::time::Instant::now();
     println!("Hello, world!");
     let v = read_file_to_vec("src/input.txt");
     println!("{:?}", v);
+    println!("Elapsed time: {:?}", timer.elapsed());
 }
 
-fn read_file_to_vec(path:&str) -> i64 {
+fn read_file_to_vec(path:&str) -> u64 {
     let file_content = fs::read_to_string(path).unwrap();
 
     let part:Vec<&str> = file_content.split(":").collect();
@@ -61,11 +61,12 @@ fn read_file_to_vec(path:&str) -> i64 {
     println!("{:?}", temperature_to_humidity_vec);
     println!("{:?}", humidity_to_location_vec);
 
-    let mut locations: Vec<i64> = Vec::new();
+    //let mut locations: Vec<u64> = Vec::new();
+    let mut min_location: u64 = 1_000_000_000_000;
 
     for i in (0..seed_ranges.len()).step_by(2) {
-        let start = seed_ranges[i].parse::<i64>().unwrap_or(0);
-        let len = seed_ranges[i+1].parse::<i64>().unwrap_or(0);
+        let start = seed_ranges[i].parse::<u64>().unwrap_or(0);
+        let len = seed_ranges[i+1].parse::<u64>().unwrap_or(0);
         for num in start..(start+len) {
             let soil = convert_number(num, &seed_to_soil_vec);
             let fertilizer = convert_number(soil, &soil_to_fertilizer_vec);
@@ -74,16 +75,19 @@ fn read_file_to_vec(path:&str) -> i64 {
             let temperature = convert_number(light, &light_to_temperature_vec);
             let humidity = convert_number(temperature, &temperature_to_humidity_vec);
             let location = convert_number(humidity, &humidity_to_location_vec);
-            locations.push(location);
+            //locations.push(location);
+            if location < min_location {
+                min_location = location;
+            }
         }
     }
 
-    let min_location = locations.iter().min().unwrap();
+    //let min_location = locations.iter().min().unwrap();
     println!("The lowest location number is {}", min_location);
 
-    0
+    min_location.clone()
 }
-fn convert_number(num: i64, map: &Vec<(i64, i64, i64)>) -> i64 {
+fn convert_number(num: u64, map: &Vec<(u64, u64, u64)>) -> u64 {
     for &(dest_start, src_start, len) in map {
         if num >= src_start && num < src_start + len {
             return dest_start + (num - src_start);
@@ -92,9 +96,9 @@ fn convert_number(num: i64, map: &Vec<(i64, i64, i64)>) -> i64 {
     num
 }
 
-fn map_extraction(map: &str) -> Vec<(i64, i64, i64)> {
+fn map_extraction(map: &str) -> Vec<(u64, u64, u64)> {
     let part = map.split("\n").collect::<Vec<&str>>();
-    let mut vec: Vec<(i64, i64, i64)> = Vec::new();
+    let mut vec: Vec<(u64, u64, u64)> = Vec::new();
     for i in 0..part.len() {
         let soil = extract_numbers(part[i]);
         if soil.len() == 3 {
