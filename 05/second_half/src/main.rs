@@ -26,14 +26,6 @@ fn read_file_to_vec(path:&str) -> i64 {
     let part:Vec<&str> = file_content.split(":").collect();
     let seed = part[1];
     let seed_ranges = seed.split_whitespace().collect::<Vec<&str>>();
-    let mut seed_vec = Vec::new();
-    for i in (0..seed_ranges.len()).step_by(2) {
-        let start = seed_ranges[i].parse::<i64>().unwrap_or(0);
-        let len = seed_ranges[i+1].parse::<i64>().unwrap_or(0);
-        for num in start..(start+len) {
-            seed_vec.push(num);
-        }
-    }
 
     let seed_to_soil: &str = part[2].trim();
     let seed_to_soil_vec = map_extraction(seed_to_soil);
@@ -69,27 +61,28 @@ fn read_file_to_vec(path:&str) -> i64 {
     println!("{:?}", temperature_to_humidity_vec);
     println!("{:?}", humidity_to_location_vec);
 
-
     let mut locations: Vec<i64> = Vec::new();
 
-    for seed in seed_vec {
-        let soil = convert_number(seed, &seed_to_soil_vec);
-        let fertilizer = convert_number(soil, &soil_to_fertilizer_vec);
-        let water = convert_number(fertilizer, &fertilizer_to_water_vec);
-        let light = convert_number(water, &water_to_light_vec);
-        let temperature = convert_number(light, &light_to_temperature_vec);
-        let humidity = convert_number(temperature, &temperature_to_humidity_vec);
-        let location = convert_number(humidity, &humidity_to_location_vec);
-        locations.push(location);
+    for i in (0..seed_ranges.len()).step_by(2) {
+        let start = seed_ranges[i].parse::<i64>().unwrap_or(0);
+        let len = seed_ranges[i+1].parse::<i64>().unwrap_or(0);
+        for num in start..(start+len) {
+            let soil = convert_number(num, &seed_to_soil_vec);
+            let fertilizer = convert_number(soil, &soil_to_fertilizer_vec);
+            let water = convert_number(fertilizer, &fertilizer_to_water_vec);
+            let light = convert_number(water, &water_to_light_vec);
+            let temperature = convert_number(light, &light_to_temperature_vec);
+            let humidity = convert_number(temperature, &temperature_to_humidity_vec);
+            let location = convert_number(humidity, &humidity_to_location_vec);
+            locations.push(location);
+        }
     }
-
 
     let min_location = locations.iter().min().unwrap();
     println!("The lowest location number is {}", min_location);
 
     0
 }
-
 fn convert_number(num: i64, map: &Vec<(i64, i64, i64)>) -> i64 {
     for &(dest_start, src_start, len) in map {
         if num >= src_start && num < src_start + len {
