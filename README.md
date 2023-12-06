@@ -87,15 +87,15 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[ ] Day 5 | part 1 - [Title Day 5](https://adventofcode.com/2023/day/5)
+[x] Day 5 | part 1 - [Wait For It 5](https://adventofcode.com/2023/day/5) -time took from 6:00 to 6:21 (+- 1 min) //Way to EASY
 
-[ ] Day 5 | part 2 - [Title Day 5 part 2](https://adventofcode.com/2023/day/5)
+[x] Day 5 | part 2 - [Wait For It 5 part 2](https://adventofcode.com/2023/day/5) - time took from 6:21 to 6:30 (+- 1 min)/‌‌‌‌/just part 1 with only 1 number instead of a vec
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 840336
 
-  part 2: none yet
+  part 2: 41382569
 </details>
 
 --------------------------------
