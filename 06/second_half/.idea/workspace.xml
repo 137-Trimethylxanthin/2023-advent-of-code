@@ -8,8 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="402c1afd-f1ac-4cf4-87c9-b0544d90ec3d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/.rustc_info.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/.rustc_info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../07/first_half/src/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../07/first_half/src/test.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../07/first_half/src/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,9 @@
       <updated>1701840257109</updated>
       <workItem from="1701840258252" duration="520000" />
       <workItem from="1701842064520" duration="16000" />
+      <workItem from="1701925915191" duration="105000" />
+      <workItem from="1701926054456" duration="10000" />
+      <workItem from="1701926730925" duration="11000" />
     </task>
     <servers />
   </component>

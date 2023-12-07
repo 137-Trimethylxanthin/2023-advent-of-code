@@ -87,9 +87,22 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[x] Day 5 | part 1 - [Wait For It 5](https://adventofcode.com/2023/day/5) -time took from 6:00 to 6:21 (+- 1 min) //Way to EASY
+[x] Day 5 | part 1 - [f You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5) - time took from 6:00 to 6:40 (+- 5 min) // was fun
 
-[x] Day 5 | part 2 - [Wait For It 5 part 2](https://adventofcode.com/2023/day/5) - time took from 6:21 to 6:30 (+- 1 min)/‌‌‌‌/just part 1 with only 1 number instead of a vec
+[x] Day 5 | part 2 - [f You Give A Seed A Fertilizer part 2](https://adventofcode.com/2023/day/5) - time took from 6:40 to 7:00 (+- 5 min) // was fun
+
+<details>
+  <summary>Answer</summary>
+  Part 1: 240320250
+
+  part 2: 28580589
+</details>
+
+--------------------------------
+
+[x] Day 6 | part 1 - [Wait For It](https://adventofcode.com/2023/day/6) -time took from 6:00 to 6:21 (+- 1 min) //Way to EASY
+
+[x] Day 6 | part 2 - [Wait For It part 2](https://adventofcode.com/2023/day/6) - time took from 6:21 to 6:30 (+- 1 min)/‌‌‌‌/just part 1 with only 1 number instead of a vec
 
 <details>
   <summary>Answer</summary>
@@ -100,28 +113,15 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[ ] Day 6 | part 1 - [Title Day 6](https://adventofcode.com/2023/day/6)
+[x] Day 7 | part 1 - [Camel Cards](https://adventofcode.com/2023/day/7) - time took from 6:00 to 9:00 (+- 5 min) // i am going insane -_-
 
-[ ] Day 6 | part 2 - [Title Day 6 part 2](https://adventofcode.com/2023/day/6)
-
-<details>
-  <summary>Answer</summary>
-  Part 1: none yet
-
-  part 2: none yet
-</details>
-
---------------------------------
-
-[ ] Day 7 | part 1 - [Title Day 7](https://adventofcode.com/2023/day/7)
-
-[ ] Day 7 | part 2 - [Title Day 7 part 2](https://adventofcode.com/2023/day/7)
+[x] Day 7 | part 2 - [Camel Cards part 2](https://adventofcode.com/2023/day/7) - time took from 9:00 to 9:30 (+- 5 min) // was ok 🥲
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 248569531
 
-  part 2: none yet
+  part 2: 250382098
 </details>
 
 --------------------------------
