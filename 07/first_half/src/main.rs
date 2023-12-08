@@ -24,7 +24,7 @@ enum HandType {
 
 fn main() {
     println!("Hello, world!");
-    let winnings = get_winnings("src/input.txt");
+    let winnings = get_winnings("src/seinsmon.txt");
     println!("winnings: {}", winnings);
 }
 
@@ -53,7 +53,7 @@ fn get_winnings(path:&str) -> u64{
 
 
 
-    println!("{:?}", hands);
+    //println!("{:?}", hands);
 
     return earnings(hands);
 
@@ -92,6 +92,8 @@ fn earnings(mut hands: Vec<(HandType, (u32, u32, u32, u32, u32), u32)>) -> u64 {
     for (rank, hand) in hands.iter().enumerate() {
         earnings += (rank as u64 + 1) * hand.2 as u64;
     }
+
+    println!("earnings: {:?}", hands);
 
     earnings
 }

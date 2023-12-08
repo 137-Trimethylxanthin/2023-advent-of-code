@@ -126,15 +126,15 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[ ] Day 8 | part 1 - [Title Day 8](https://adventofcode.com/2023/day/8)
+[ ] Day 8 | part 1 - [Haunted Wasteland](https://adventofcode.com/2023/day/8)
 
-[ ] Day 8 | part 2 - [Title Day 8 part 2](https://adventofcode.com/2023/day/8)
+[ ] Day 8 | part 2 - [Haunted Wasteland part 2](https://adventofcode.com/2023/day/8)
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 16697
 
-  part 2: none yet
+  part 2: 10668805667831
 </details>
 
 --------------------------------
