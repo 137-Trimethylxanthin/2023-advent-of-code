@@ -126,9 +126,9 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[ ] Day 8 | part 1 - [Haunted Wasteland](https://adventofcode.com/2023/day/8)
+[x] Day 8 | part 1 - [Haunted Wasteland](https://adventofcode.com/2023/day/8) - time took from 6:00 to 7:00 (+- 5 min)
 
-[ ] Day 8 | part 2 - [Haunted Wasteland part 2](https://adventofcode.com/2023/day/8)
+[x] Day 8 | part 2 - [Haunted Wasteland part 2](https://adventofcode.com/2023/day/8) - time took from 7:00 to 7:23 (+- 5 min)
 
 <details>
   <summary>Answer</summary>
@@ -139,15 +139,15 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[ ] Day 9 | part 1 - [Title Day 9](https://adventofcode.com/2023/day/9)
+[x] Day 9 | part 1 - [Mirage Maintenance](https://adventofcode.com/2023/day/9) - time took from 6:00 to 7:17 (+- 5 min)
 
-[ ] Day 9 | part 2 - [Title Day 9 part 2](https://adventofcode.com/2023/day/9)
+[x] Day 9 | part 2 - [Mirage Maintenance part 2](https://adventofcode.com/2023/day/9) - time took from 7:17 to 7:28 (+- 5 min)
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 1762065988
 
-  part 2: none yet
+  part 2: 1066
 </details>
 
 --------------------------------
