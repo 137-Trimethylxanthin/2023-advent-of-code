@@ -152,9 +152,9 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[ ] Day 10 | part 1 - [Title Day 10](https://adventofcode.com/2023/day/10)
+[x] Day 10 | part 1 - [Pipe Maze](https://adventofcode.com/2023/day/10) - time took from 6:00 to 8:00 (+- 5 min) // it broke me 😭 i used go for this one
 
-[ ] Day 10 | part 2 - [Title Day 10 part 2](https://adventofcode.com/2023/day/10)
+[x] Day 10 | part 2 - [Pipe Maze part 2](https://adventofcode.com/2023/day/10) - time took from 8:00 to 8:40 (+- 5 min) // idk how to find S pipe but now you have to find it yourself 🤷‍♂️
 
 <details>
   <summary>Answer</summary>
