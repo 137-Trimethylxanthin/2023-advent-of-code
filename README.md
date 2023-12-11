@@ -163,15 +163,15 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
   part 2: none yet
 </details>
 
-[ ] Day 11 | part 1 - [Title Day 11](https://adventofcode.com/2023/day/11)
+[x] Day 11 | part 1 - [Cosmic Expansion](https://adventofcode.com/2023/day/11) - time took from 6:00 to 6:30 (+- 5 min) // is ok
 
-[ ] Day 11 | part 2 - [Title Day 11 part 2](https://adventofcode.com/2023/day/11)
+[x] Day 11 | part 2 - [Cosmic Expansion part 2](https://adventofcode.com/2023/day/11) - time took from 6:30 to 7:05 (+- 5 min) // ez
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 9769724
 
-  part 2: none yet
+  part 2: 603020563700
 </details>
 
 --------------------------------
