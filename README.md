@@ -163,6 +163,8 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
   part 2: none yet
 </details>
 
+--------------------------------
+
 [x] Day 11 | part 1 - [Cosmic Expansion](https://adventofcode.com/2023/day/11) - time took from 6:00 to 6:30 (+- 5 min) // is ok
 
 [x] Day 11 | part 2 - [Cosmic Expansion part 2](https://adventofcode.com/2023/day/11) - time took from 6:30 to 7:05 (+- 5 min) // ez
@@ -176,41 +178,41 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[ ] Day 12 | part 1 - [Title Day 12](https://adventofcode.com/2023/day/12)
+[x] Day 12 | part 1 - [Title Day 12](https://adventofcode.com/2023/day/12) - time took from 6:00 to 6:40 (+- 5 min)
 
-[ ] Day 12 | part 2 - [Title Day 12 part 2](https://adventofcode.com/2023/day/12)
+[x] Day 12 | part 2 - [Title Day 12 part 2](https://adventofcode.com/2023/day/12) - time took from 6:40 to 7:00 (+- 5 min)
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 7307
 
-  part 2: none yet
+  part 2: 3415570893842
 </details>
 
 --------------------------------
 
-[ ] Day 13 | part 1 - [Title Day 13](https://adventofcode.com/2023/day/13)
+[x] Day 13 | part 1 - [Point of Incidence](https://adventofcode.com/2023/day/13) - time took from 6:00 to 6:50 (+- 5 min)
 
-[ ] Day 13 | part 2 - [Title Day 13 part 2](https://adventofcode.com/2023/day/13)
+[x] Day 13 | part 2 - [Point of Incidence part 2](https://adventofcode.com/2023/day/13) - time took from 6:50 to 7:20 (+- 5 min)
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 29130
 
-  part 2: none yet
+  part 2: 33438
 </details>
 
 --------------------------------
 
-[ ] Day 14 | part 1 - [Title Day 14](https://adventofcode.com/2023/day/14)
+[x] Day 14 | part 1 - [Parabolic Reflector Dish](https://adventofcode.com/2023/day/14) - time took from 6:00 to 6:23 (+- 1 min)
 
-[ ] Day 14 | part 2 - [Title Day 14 part 2](https://adventofcode.com/2023/day/14)
+[x] Day 14 | part 2 - [Parabolic Reflector Dish part 2](https://adventofcode.com/2023/day/14) - time took from 6:23 to 6:33 (+- 1 min)
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 106648
 
-  part 2: none yet
+  part 2: 87700
 </details>
 
 --------------------------------
