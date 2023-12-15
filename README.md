@@ -217,9 +217,9 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[ ] Day 15 | part 1 - [Title Day 15](https://adventofcode.com/2023/day/15)
+[x] Day 15 | part 1 - [Title Day 15](https://adventofcode.com/2023/day/15) - time took from 6:00 to 6:15 (+- 1 min) // EZEZ
 
-[ ] Day 15 | part 2 - [Title Day 15 part 2](https://adventofcode.com/2023/day/15)
+[x] Day 15 | part 2 - [Title Day 15 part 2](https://adventofcode.com/2023/day/15) - time took from 6:15 to 6:30 (+- 1 min) // HASHMAP -_-
 
 <details>
   <summary>Answer</summary>
