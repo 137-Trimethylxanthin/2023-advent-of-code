@@ -217,9 +217,9 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[x] Day 15 | part 1 - [Title Day 15](https://adventofcode.com/2023/day/15) - time took from 6:00 to 6:15 (+- 1 min) // EZEZ
+[x] Day 15 | part 1 - [Lens Library](https://adventofcode.com/2023/day/15) - time took from 6:00 to 6:15 (+- 1 min) // EZEZ
 
-[x] Day 15 | part 2 - [Title Day 15 part 2](https://adventofcode.com/2023/day/15) - time took from 6:15 to 6:30 (+- 1 min) // HASHMAP -_-
+[x] Day 15 | part 2 - [Lens Library part 2](https://adventofcode.com/2023/day/15) - time took from 6:15 to 6:30 (+- 1 min) // HASHMAP -_-
 
 <details>
   <summary>Answer</summary>
@@ -231,9 +231,9 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[ ] Day 16 | part 1 - [Title Day 16](https://adventofcode.com/2023/day/16)
+[x] Day 16 | part 1 - [The Floor Will Be Lava](https://adventofcode.com/2023/day/16) - time took from 7:00 to 9:00 (+- 10 min) // wirde with brake
 
-[ ] Day 16 | part 2 - [Title Day 16 part 2](https://adventofcode.com/2023/day/16)
+[x] Day 16 | part 2 - [The Floor Will Be Lava](https://adventofcode.com/2023/day/16) - time took from 9:00 to 9:30 (+- 5 min) // :( i am sad
 
 <details>
   <summary>Answer</summary>
