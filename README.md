@@ -242,9 +242,9 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
   part 2: none yet
 </details>
 
-[ ] Day 17 | part 1 - [Title Day 17](https://adventofcode.com/2023/day/17)
+[x] Day 17 | part 1 - [Clumsy Crucible](https://adventofcode.com/2023/day/17) - time took from 16:00 to 17:20 (+- 15 min) // i hate rust i hate rust i ha... 
 
-[ ] Day 17 | part 2 - [Title Day 17 part 2](https://adventofcode.com/2023/day/17)
+[x] Day 17 | part 2 - [Clumsy Crucible](https://adventofcode.com/2023/day/17) - time took from 17:20 to 17:40 (+- 5 min) // did it in one file -_-
 
 <details>
   <summary>Answer</summary>
