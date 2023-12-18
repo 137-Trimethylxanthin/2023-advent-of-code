@@ -8,9 +8,6 @@ fn main() {
     }
     println!("-----------------");
     let lagoon = dig_out_lagoon(lagoon, &dig_plan);
-    for row in &lagoon {
-        println!("{:?}", row);
-    }
     println!("-----------------");
     let cubic = calculate_cubic(lagoon);
     println!("size: {}m²", cubic);
@@ -163,12 +160,14 @@ fn dig_out_lagoon(mut lagoon: Vec<Vec<char>>, dig_plan: &Vec<(String, usize, Str
     let cols = lagoon[0].len();
     let directions = vec![(-1, 0), (1, 0), (0, -1), (0, 1)];
 
-    let (mut start_x, mut start_y) = (get_left_indent(dig_plan) as usize - 1, get_up_indent(dig_plan) as usize - 1);
+    let (mut start_x, mut start_y) = (0, 0);
+
+
     'outer: for i in 0..rows {
         for j in 0..cols {
-            if lagoon[i][j] == '.' {
-                start_x = i;
-                start_y = j;
+            if lagoon[get_left_indent(dig_plan) as usize + i][get_left_indent(dig_plan) as usize + j] == '.' {
+                start_x = get_left_indent(dig_plan) as usize + i;
+                start_y =  get_up_indent(dig_plan) as usize + j;
                 break 'outer;
             }
         }
@@ -188,6 +187,7 @@ fn dig_out_lagoon(mut lagoon: Vec<Vec<char>>, dig_plan: &Vec<(String, usize, Str
             dfs(new_x, new_y, lagoon, directions, rows, cols);
         }
     }
+    println!("start_x: {} start_y: {}", start_x, start_y);
 
     dfs(start_x, start_y, &mut lagoon, &directions, rows, cols);
     lagoon

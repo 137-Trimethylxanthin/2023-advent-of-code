@@ -255,9 +255,9 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 --------------------------------
 
-[ ] Day 18 | part 1 - [Title Day 18](https://adventofcode.com/2023/day/18)
+[x] Day 18 | part 1 - [Lavaduct Lagoon 18](https://adventofcode.com/2023/day/18) - time took from 6:00 to 7:00 -then from 12:00 - 12:15 (+- 5 min) // little bit of an issue with the startpos
 
-[ ] Day 18 | part 2 - [Title Day 18 part 2](https://adventofcode.com/2023/day/18)
+[x] Day 18 | part 2 - [Lavaduct Lagoon part 2](https://adventofcode.com/2023/day/18) - time took from 12:15 to 15:06 (+- 5 min) // i hate rust completely rewritten now with structs
 
 <details>
   <summary>Answer</summary>
