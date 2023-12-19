@@ -223,9 +223,9 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 511498
 
-  part 2: none yet
+  part 2: 284674
 
 </details>
 
@@ -237,9 +237,9 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 7562
 
-  part 2: none yet
+  part 2: 7793
 </details>
 
 [x] Day 17 | part 1 - [Clumsy Crucible](https://adventofcode.com/2023/day/17) - time took from 16:00 to 17:20 (+- 15 min) // i hate rust i hate rust i ha... 
@@ -248,9 +248,9 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 635
 
-  part 2: none yet
+  part 2: 734
 </details>
 
 --------------------------------
@@ -261,22 +261,22 @@ ps: if the time is without breaks, if there are any breaks i will write them dow
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 76387
 
-  part 2: none yet
+  part 2: 250022188522074
 </details>
 
 --------------------------------
 
-[ ] Day 19 | part 1 - [Title Day 19](https://adventofcode.com/2023/day/19)
+[x] Day 19 | part 1 - [Aplenty](https://adventofcode.com/2023/day/19)
 
-[ ] Day 19 | part 2 - [Title Day 19 part 2](https://adventofcode.com/2023/day/19)
+[x] Day 19 | part 2 - [Aplenty part 2](https://adventofcode.com/2023/day/19)
 
 <details>
   <summary>Answer</summary>
-  Part 1: none yet
+  Part 1: 346230
 
-  part 2: none yet
+  part 2: 124693661917133
 </details>
 
 --------------------------------
